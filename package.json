@@ -1,0 +1,19 @@
+{
+  "name": "rocketseat-ignite-node",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^6.3.5",
+    "csv-generate": "^4.3.0",
+    "csv-parse": "^5.5.2",
+    "node-fetch": "^3.3.2"
+  }
+}
