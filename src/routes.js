@@ -61,6 +61,14 @@ export const routes = [
       const { id } = req.params;
       const { title, description } = req.body;
 
+      if (!title || !description) {
+        return res
+          .writeHead(400)
+          .end(
+            JSON.stringify({ message: 'title or description are required' })
+          );
+      }
+
       const existingTask = database.select('tasks', { id });
 
       if (existingTask.length === 0) {
